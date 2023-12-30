@@ -1,0 +1,15 @@
+.product-list__wrapper{
+  width: 100%;
+  .product-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 15px;
+    &__empty{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+}

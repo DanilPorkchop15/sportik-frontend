@@ -1,0 +1,18 @@
+.not-found-page {
+  &__content {
+    margin: auto;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  &__redirect{
+    color: $linkColor
+  }
+}

@@ -1,0 +1,108 @@
+.home-page {
+  &__section {
+    margin-block: 8vh;
+    .section {
+      &-hot {
+        &__title {
+          margin-bottom: 4vh;
+        }
+        &__content {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      &-new {
+        &__title {
+          margin-bottom: 4vh;
+        }
+        &__content {
+          display: flex;
+          row-gap: 2vh;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        &__link{
+          margin: 0 auto;
+        }
+      }
+      &-categories {
+        &__title {
+          margin-bottom: 4vh;
+        }
+        &__content {
+          display: grid;
+          grid-template-columns: 2fr 1fr 1fr;
+          grid-template-rows: repeat(3, 1fr);
+          .categories__category {
+            color: $altFontColor;
+            min-height: 12em;
+            border-radius: 10px;
+            box-sizing: content-box;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            cursor: pointer;
+            transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+            &:hover{
+              box-shadow: 0 1px 10px $color5;
+              transform: scale(1.01);
+            }
+            &[data-num='1'] {
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.6),
+                  rgba(0, 0, 0, 0.6)
+                ),
+                url('https://m.liniamody.ru/images/zhenskaya-obuv-i-ee-vidi.jpg');
+              grid-column: 1;
+              grid-row: 1 / span 2;
+              background-size: cover;
+            }
+            &[data-num='2'] {
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.6),
+                  rgba(0, 0, 0, 0.6)
+                ),
+                url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaDsaL1l4_in0rdzdUaqeYUNpGVNH7MY-d1g&usqp=CAU');
+              grid-column: 2;
+              grid-row: 1;
+              background-size: cover;
+            }
+            &[data-num='3'] {
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.6),
+                  rgba(0, 0, 0, 0.6)
+                ),
+                url('https://ss.sport-express.ru/userfiles/materials/187/1875288/volga.jpg');
+              grid-column: 3;
+              grid-row: 1;
+              background-size: cover;
+            }
+            &[data-num='4'] {
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.6),
+                  rgba(0, 0, 0, 0.6)
+                ),
+                url('https://s9.stc.all.kpcdn.net/woman/wp-content/uploads/2021/11/odezhda-960x540.jpg');
+              grid-column: 2 / span 3;
+              grid-row: 2;
+              background-size: cover;
+            }
+            &[data-num='5'] {
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.6),
+                  rgba(0, 0, 0, 0.6)
+                ),
+                url('https://static.alltime.ru/obj/article/image-blog/Moda_u_podrostkov_devochek/Moda_u_podrostkov_devochek_2.jpg');
+              grid-column: 1 / span 3;
+              grid-row: 3;
+              background-size: cover;
+              background-position-y: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

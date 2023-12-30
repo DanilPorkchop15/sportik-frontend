@@ -1,0 +1,20 @@
+.expanding-list{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  &__item{
+    border-block:1px solid $hintFontColor; 
+    padding: 1.5rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__text{
+    margin-top: 1.5rem;
+  }
+}

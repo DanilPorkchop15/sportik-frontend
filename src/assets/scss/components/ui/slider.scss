@@ -1,0 +1,35 @@
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  &__sidebar {
+    display: flex;
+  }
+  &-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    &__image {
+      width: 100px;
+      min-height: 100px;
+    }
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      cursor: pointer;
+    }
+  }
+  &__image {
+    height: 650px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+  }
+  &__main-image {
+    min-width: 400px;
+    height: 650px;
+    background: #000;
+  }
+}

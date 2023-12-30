@@ -1,0 +1,65 @@
+.help-page {
+  &__content {
+    margin-block: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  &__section {
+    .section {
+      &-contact {
+        &__content {
+          display: flex;
+          justify-content: space-between;
+        }
+        &__info {
+          .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            &__contacts-list {
+              .contacts-list {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                &__item{
+                  display: flex;
+                  flex-direction: column;
+                  gap: 2rem;
+                }
+                &__social-list{
+                  .social-list{
+                    display: flex;
+                    gap: 2rem;
+                    &__icon{
+                      height: 62px;
+                      aspect-ratio: 1;
+                      border-radius: 50%
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &-logo{
+          height: 85%;
+          aspect-ratio: 1;
+        }
+      }
+      &-payment, &-change, &-FAQ {
+        &__content{
+          display: flex;
+          flex-direction: column;
+          gap: 4rem;
+        }
+        &__text{
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+      }
+    }
+  }
+}

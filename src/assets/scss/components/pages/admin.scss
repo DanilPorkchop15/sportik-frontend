@@ -1,0 +1,301 @@
+.admin-page {
+  &__content {
+    display: flex;
+    margin-block: 4rem;
+    gap: 2rem;
+  }
+  &__section {
+    display: flex;
+    .section {
+      &-product {
+        &__post {
+          border: 2px dashed $mainFontColor;
+          padding: 2rem 1rem;
+          border-radius: 12px;
+          .product-post {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            &__input {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              width: 100%;
+              label {
+                border: 1px solid $mainFontColor;
+                padding: 1rem;
+                border-radius: 12px;
+                select {
+                  margin-inline-start: 1rem;
+                  border: 1px solid $mainFontColor;
+                  padding: 0.8rem;
+                  border-radius: 12px;
+                    min-width: 250px;
+                  option {
+                    color: $mainFontColor;
+                    padding: 3px;
+                  }
+                }
+              }
+            }
+            &-input {
+              border: 1px solid $mainFontColor;
+              padding: 0.5rem 1rem;
+              border-radius: 6px;
+            }
+            &__characteristics {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              .product-characteristics {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                border: 1px solid $mainFontColor;
+                padding: 1rem;
+                border-radius: 12px;
+                &__characteristic {
+                  border: 1px solid $mainFontColor;
+                  padding: 1rem;
+                  border-radius: 12px;
+                }
+                &__add-new {
+                  display: flex;
+                  justify-content: end;
+                }
+                &__delete {
+                  display: flex;
+                  justify-content: end;
+                }
+                .product-characteristic {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1.5rem;
+                  &__sub-characteristics {
+                    .product-sub-characteristics {
+                      display: flex;
+                      flex-direction: column;
+                      gap: 1rem;
+                      &__sub-characteristic {
+                        display: flex;
+                        flex-direction: column;
+                        .product-sub-characteristic {
+                          border: 1px solid $mainFontColor;
+                          padding: 0.8rem;
+                          border-radius: 10px;
+                          display: flex;
+                          flex-direction: column;
+                          gap: 1rem;
+                        }
+                      }
+                      &__add-new {
+                        display: flex;
+                        justify-content: end;
+                      }
+                      &__delete {
+                        display: flex;
+                        justify-content: end;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &__dimensions {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              .product-dimensions {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid $mainFontColor;
+                padding: 1rem;
+                border-radius: 12px;
+                gap: 1rem;
+                &__dimension {
+                  .product-dimension {
+                    border: 1px solid $mainFontColor;
+                    padding: 1rem;
+                    border-radius: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    &__sub-dimensions {
+                      display: flex;
+                      flex-direction: column;
+                      gap: 1rem;
+                      .product-sub-dimensions {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        border: 1px solid $mainFontColor;
+                        padding: 1rem;
+                        border-radius: 12px;
+                        &__add-new {
+                          display: flex;
+                          justify-content: end;
+                        }
+                        &__delete {
+                          display: flex;
+                          justify-content: end;
+                        }
+                      }
+                    }
+                  }
+                }
+                &__add-new {
+                  display: flex;
+                  justify-content: end;
+                }
+                &__delete {
+                  display: flex;
+                  justify-content: end;
+                }
+              }
+            }
+            &__images {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              .product-images {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                border: 1px solid $mainFontColor;
+                padding: 1rem;
+                border-radius: 12px;
+                &__image {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1rem;
+                  border: 1px solid $mainFontColor;
+                  padding: 1rem;
+                  border-radius: 12px;
+                  .product-image {
+                    display: flex;
+                    font-display: column;
+                  }
+                }
+                &__add-new {
+                  display: flex;
+                  justify-content: end;
+                }
+                &__delete {
+                  display: flex;
+                  justify-content: end;
+                }
+                
+              }
+            }
+            &__button {
+              padding: 1rem 2rem;
+              background: $color2;
+              color: $altFontColor;
+              border-radius: 20vh;
+              width: 100%;
+            }
+          }
+        }
+      }
+      &-category {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &__post {
+          border: 2px dashed $mainFontColor;
+          padding: 2rem 1rem;
+          border-radius: 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          .category-post {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            &__input {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              width: 100%;
+            }
+            &-input {
+              border: 1px solid $mainFontColor;
+              padding: 0.5rem 1rem;
+              border-radius: 6px;
+            }
+            &__button {
+              padding: 1rem 2rem;
+              background: $color2;
+              color: $altFontColor;
+              border-radius: 20vh;
+              width: 100%;
+            }
+          }
+        }
+        &__delete {
+          border: 2px dashed $mainFontColor;
+          padding: 2rem 1rem;
+          border-radius: 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          .category-delete {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            &__select {
+              border: 1px solid $mainFontColor;
+              padding: 1rem;
+              border-radius: 12px;
+              select {
+                margin-inline-start: 1rem;
+                border: 1px solid $mainFontColor;
+                padding: 0.8rem;
+                border-radius: 12px;
+                    min-width: 250px;
+                option {
+                  color: $mainFontColor;
+                  padding: 3px;
+                }
+              }
+            }
+            &__button {
+              padding: 1rem 2rem;
+              background: $color2;
+              color: $altFontColor;
+              border-radius: 20vh;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.button__add-new, .button__delete {
+  height: 2rem;
+  aspect-ratio: 1;
+  border-radius: 20vh;
+  color: $altFontColor;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button__add-new{
+  background: $color2;
+}
+
+.button__delete{
+  background: salmon;
+}
+
+.product-post__buttons{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: end;
+}
